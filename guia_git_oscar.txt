@@ -1,0 +1,82 @@
+
+🧠 GUÍA RÁPIDA DE COMANDOS GIT – FLUJO PERSONAL (OSCAR)
+
+─────────────────────────────────────────────────────────────
+📥 PULL, FETCH, MERGE – TRAER CAMBIOS DESDE EL REMOTO (GitHub)
+─────────────────────────────────────────────────────────────
+
+1. git pull origin main
+   🔹 Trae y fusiona la rama 'main' del remoto (GitHub) con tu rama actual.
+   🔸 Si estás en 'main', actualiza tu rama local.
+   🔸 Si estás en 'oscar', fusiona lo nuevo de 'main' en 'oscar'.
+
+2. git fetch origin
+   🔹 Descarga las últimas actualizaciones del remoto sin aplicarlas.
+   🔸 Muy útil para inspeccionar antes de mezclar.
+
+3. git merge origin/main
+   🔹 Fusiona la versión remota de 'main' con tu rama actual.
+   🔸 Se usa justo después de 'git fetch'.
+
+────────────────────────────────────────────
+📤 PUSH – SUBIR CAMBIOS AL REMOTO (GitHub)
+────────────────────────────────────────────
+
+4. git push
+   🔹 Sube tu rama actual al remoto si ya está vinculada con GitHub.
+
+5. git push -u origin nombre-rama
+   🔹 Sube la rama por primera vez y la vincula al remoto.
+   🔸 Ejemplo: git push -u origin oscar
+
+6. git push origin main
+   🔹 Sube tu rama 'main' local al repositorio remoto.
+
+───────────────────────────────────────
+🔀 MERGE – COMBINAR RAMAS LOCALMENTE
+───────────────────────────────────────
+
+7. git merge oscar
+   🔹 Combina los cambios de la rama 'oscar' en tu rama actual.
+
+8. git merge main
+   🔹 Combina los cambios de 'main' en tu rama actual.
+
+────────────────────────────────────────
+🔧 ESTADO Y CONTROL DE CAMBIOS LOCALES
+────────────────────────────────────────
+
+9. git status
+   🔹 Muestra el estado actual del repositorio (archivos modificados, no guardados, etc).
+
+10. git add .
+    🔹 Añade todos los archivos modificados al staging area.
+
+11. git commit -m "mensaje"
+    🔹 Guarda los cambios con un mensaje de commit.
+
+────────────────────────────
+🔍 REVISIÓN DE RAMAS Y VINCULACIÓN
+────────────────────────────
+
+12. git branch
+    🔹 Muestra todas las ramas locales y en cuál estás.
+
+13. git branch -vv
+    🔹 Muestra las ramas locales y su vinculación con el remoto.
+
+14. git checkout nombre-rama
+    🔹 Cambia de rama.
+
+15. git checkout -b nueva-rama
+    🔹 Crea una nueva rama y te cambia a ella.
+
+────────────────────────────
+
+📌 RECOMENDADO:
+- Trabaja en una rama personal (como 'oscar')
+- Usa 'main' solo para versiones estables o para entregar
+- Haz pull de 'main' a tu rama antes de seguir trabajando
+- Haz merge de tu rama a 'main' solo cuando todo esté probado
+
+
