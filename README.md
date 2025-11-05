@@ -47,6 +47,5 @@ php artisan migrate --seed
 ### 5. Ejecuta el servidor
 
 ```bash
-Copiar código
 php artisan serve
 ```
