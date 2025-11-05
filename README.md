@@ -28,23 +28,25 @@
 ```bash
 git clone https://github.com/OSKYLERX-SK/examen_proyectoSI1.git
 cd examen_proyectoSI1
-2. Instala dependencias
-
+```
+### 2. Instala dependencias
+```bash
 composer install
 npm install
-
-3. Configura el entorno
-
+```
+### 3. Configura el entorno
+```bash
 cp .env.example .env
 php artisan key:generate
 Edita el archivo .env con tus credenciales de base de datos.
-
-4. Migra y (opcional) llena la base de datos
-
+```
+### 4. Migra y (opcional) llena la base de datos
+```bash
 php artisan migrate --seed
-5. Ejecuta el servidor
+```
+### 5. Ejecuta el servidor
 
-
+```bash
 Copiar código
 php artisan serve
 ```
